@@ -1,0 +1,24 @@
+Specs:
+
+- Check for command-line usage
+    - First command-line argument
+        - Name of a CSV file containing the STR counts for a list of individuals
+    - Second command-line argument
+        - Name of a text file containing the DNA sequence to identify
+
+- Read database file into a Variable
+    - Open te CSV file and read its contents into memory
+        - We will read the contents into a list called database
+        - Each row read from the CSV file is returned as a list of strings
+
+- Read DNA sequence file into a variable
+    - Open the DNA sequence file and read its contents into memory
+
+- Find longest match of each STR in DNA sequence
+    - Need to store the subsequences into a list
+    - Need to read the DNA sequence and look for the longest sequence of each subsequence
+    - Store the results in the dictionary
+
+- Check database for matching profiles
+    - Need to check each person's STR count in the database dictionary
+    - If there is a match between the STR count of the DNA sample and person, we will add 1 to match
