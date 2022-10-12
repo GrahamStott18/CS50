@@ -1,8 +1,6 @@
 # CS50
 CS50x course files
 
+
 ## Course Certificate
-[CS50x.pdf](https://github.com/GrahamStott18/CS50/files/9766482/CS50x.pdf)
-
-
-![This is an image](https://cs50.harvard.edu/certificates/385da0a1-7dae-4c67-b6cb-b9a95815836b)
+![CS50x Course Certificate](https://user-images.githubusercontent.com/37821655/195389318-3f064c93-1d25-4902-b225-7f895d01e607.png)
