@@ -1,0 +1,18 @@
+- Check if input is filename
+
+- Open memory card
+
+- Repeat until end of card:
+    - Read 512 bytes into a buffer
+    - If start of new jpeg
+            - Write new jpeg
+        - Else
+            - Close current file
+            - Open new file
+    - Else
+        - If already found jpeg
+            - keep writing to jpeg
+
+- End of memory card
+
+- Close all open files

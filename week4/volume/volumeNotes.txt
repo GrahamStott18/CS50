@@ -1,0 +1,7 @@
+ToDo:
+    - Read the header from the input file.
+    - Write the header to the output file.
+    - Repeat for each sample:
+        - Read the sample from the input file.
+        - Multply the sample value by he volume factor.
+        - Write the new sample to the output file.
