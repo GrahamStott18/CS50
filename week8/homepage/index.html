@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>My cs50</title>
+    <script>
+        function blinkr() {
+            let arrowr = document.querySelector('#arrowright');
+            if (arrowr.style.visibility === 'hidden') {
+                arrowr.style.visibility = 'visible';
+            }
+            else {
+                arrowr.style.visibility = 'hidden';
+            }
+        }
+        function blinkl() {
+            let arrowl = document.querySelector('#arrowleft');
+            if (arrowl.style.visibility === 'hidden') {
+                arrowl.style.visibility = 'visible';
+            }
+            else {
+                arrowl.style.visibility = 'hidden';
+            }
+        }
+        window.setInterval(blinkr, 500);
+        window.setInterval(blinkl, 500);
+    </script>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</a></li>
+            <li class="breadcrumb-item"><a href="courseDescription.html">Course Description</a></li>
+            <li class="breadcrumb-item"><a href="myGradebook.html">Gradebook</a></li>
+            <li class="breadcrumb-item"><a href="courseResources.html">Resources</a></li>
+        </ol>
+    </nav>
+    <img src="cs50-class.jpg" alt="CS50 Class" class="image">
+    <h1 class="bluetext"><b>My CS50 Mainpage</b></h1>
+    <p class="pinktext"></p>
+    <div class="text-center">
+        <i class="arrow right" id="arrowright"></i>
+        <button type="button" class="btn btn-outline-info"><a
+                href="https://cs50.harvard.edu/x/2022/">CS50 Mainpage</a></button>
+        <i class="arrow left" id="arrowleft"></i>
+    </div>
+
+    <p><br></p>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to CS50!</h1>
+            <p>This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. Languages include C, Python, and SQL plus HTML, CSS, and JavaScript. Problem sets inspired by the arts, humanities, social sciences, and sciences. Course culminates in a final project. Designed for concentrators and non-concentrators alike, with or without prior programming experience. Two thirds of CS50 students have never taken CS before. Among the overarching goals of this course are to inspire students to explore unfamiliar waters, without fear of failure, create an intensive, shared experience, accessible to all students, and build community among students.</p>
+        </div>
+    </div>
+
+    <h2 class="blacktext"><br><b>Course Program</b></h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Week</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Content</th>
+                <th scope="col">Link to Material</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">0</th>
+                <td>Scratch</td>
+                <td>Introduction<br>What is computer science?<br>Representing Numbers<br>Text<br>Algorithms<br>Pseudocode<br>Scratch Basics</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/0/">Scratch</a></td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>C Language</td>
+                <td>Data Types<br>Operators<br>Conditional Statements<br>Loops<br>Command Line<br>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/1/">C</a></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Arrays</td>
+                <td>Functions<br>Variables and Scope<br>Debugging<br>Arrays<br>Command Line Arguments</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/2/">Arrays</a></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Algorithms</td>
+                <td>Linear Search<br>Binary Search<br>Structs<br>Bubble Sort<br>Selection Sort<br>Recursion<br>Merge Sort</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/3/">Algorithms</a></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Memory</td>
+                <td>Hexadecimal<br>Pointers<br>Defining Custom Types<br>Dynamic Memory Allocation<br>Call Stacks<br>File Pointers</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/4/">Memory</a></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Data Structures</td>
+                <td>Data Structures<br>Structures<br>Linked Lists<br>Hash tables<br>Tries</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/5/">Data Structures</a></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Python</td>
+                <td>Python Syntax<br>Libraries<br>Documentation</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/6/">Python</a></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>SQL</td>
+                <td>Data Processing<br>Relational Databases<br>SQL with Python</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/7/">SQL</a></td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>HTML, CSS, JavaScript</td>
+                <td>IP<br>HTML<br>CSS<br>JavaScript<br>DOM</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/8/">HTML, CSS, JavaScript</a></td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Flask</td>
+                <td>Flask<br>Ajax</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/9/">Flask</a></td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Emoji</td>
+                <td>Wrap Up<br>Tools<br>Emoji</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/10/">Emoji</a></td>
+            </tr>
+            <tr>
+                <th scope="row">-</th>
+                <td>Cybersecurity</td>
+                <td>Passwords<br>Email, Private Mode<br>Encryption</td>
+                <td><a href="https://cs50.harvard.edu/x/2022/weeks/cybersecurity/">Cybersecurity</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

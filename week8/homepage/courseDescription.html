@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>My CS50</title>
+    <script>
+        function blinkr() {
+            let arrowr = document.querySelector('#arrowright');
+            if (arrowr.style.visibility === 'hidden') {
+                arrowr.style.visibility = 'visible';
+            }
+            else {
+                arrowr.style.visibility = 'hidden';
+            }
+        }
+        function blinkl() {
+            let arrowl = document.querySelector('#arrowleft');
+            if (arrowl.style.visibility === 'hidden') {
+                arrowl.style.visibility = 'visible';
+            }
+            else {
+                arrowl.style.visibility = 'hidden';
+            }
+        }
+        window.setInterval(blinkr, 500);
+        window.setInterval(blinkl, 500);
+    </script>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="courseDescription.html">Course Description</a></li>
+            <li class="breadcrumb-item"><a href="myGradebook.html">Gradebook</a></li>
+            <li class="breadcrumb-item"><a href="courseResources.html">Resources</a></li>
+        </ol>
+    </nav>
+    <img src="thisIsCS50.avif" alt="This Is CS50" class="image">
+    <h1 class="bluetext"><b>Course Description</b></h1>
+    <p class="pinktext">View Course Syllabus <link rel="stylesheet" href="">.</p>
+    <div class="text-center">
+        <i class="arrow right" id="arrowright"></i>
+        <button type="button" class="btn btn-outline-info"><a href="https://cs50.harvard.edu/x/2022/syllabus/">CS50 Syllabus</a></button>
+        <i class="arrow left" id="arrowleft"></i>
+    </div>
+</body>
+
+</html>

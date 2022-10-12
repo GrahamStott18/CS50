@@ -1,0 +1,21 @@
+Mainpage (index.html)
+- Course Mainpage link
+- Subreddit link
+- Course Program Contents (by week)
+    - With link to each weeks page
+
+
+
+Course Description Page (courseDescription.html)
+- Syllabus link
+
+
+
+My Gradebook Page (myGradebook.html)
+- Gradebook link
+
+
+
+Resource Page (courseResources.html)
+- Manual Pages link
+- Style Guide link
