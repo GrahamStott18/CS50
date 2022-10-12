@@ -1,0 +1,20 @@
+Specs:
+
+- Prompt user for input
+
+- Count the number of letters in the text
+    - Can be any uppercase or lowercase alphabetic characters
+    - Shouldnt include any punctuation, digits, or other symbols
+
+- Count the number of words in the text
+    - Sequence of letters separated by a space
+
+- Count the number of sentences in the text
+    - Squence of characters that end with a '.' '!' or '?'
+
+- Apply the formula fo Coleman-Liau index to determine the grade level
+
+
+Coleman-Liau Index:
+
+index = 0.0588 * L - 0.296 * S - 15.8

@@ -1,0 +1,4 @@
+hello specs - python
+
+- Prompt user for name
+- Print greeting with the users name
