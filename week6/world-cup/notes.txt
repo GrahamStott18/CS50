@@ -1,0 +1,38 @@
+- Need to simulate the tournament and estimate the pobablility that any given team wins the environment.
+    - Need to repeatedly simulate rounds between the 16 teams.
+
+Functions to Code:
+    - main function: Read teams into memory from file
+    - simulate_tournament: Simulate a tournament, return name of winning team
+    - main function: Simulate N tournaments and keep track of win counts
+
+Main function: Read teams into memory from file
+    - Read the team data from the CSV file and add each team to the list teams
+    - You can access the name of the file, then, with sys.argv[1]
+    - You can open a file with open(filename)
+        with open(filename) as file:
+            reader = csv.DictReader(file)
+    - All values read from the file will be strings. ie, you must convert the team's rating to an integer
+    - Append each team's dictionary to teams
+    - The function call teams.append(x) will append x to the list teams.
+
+simulate_tournament: Simulate a tournament, return name of winning team
+    - As long as the number of teams left is greater than 1, we will keep simulating rounds.
+    - If x is a list, you can use len(x) to determine the lenght of the list.
+
+        while len(teams) > 1:
+            teams = simulate_rounds(teams)
+
+    - After system simulates rounds until we are left with a winning team, we can return the name of the winner.
+        - Since there is only 1 team left in teams, that means the winning team is located in teams[0].
+
+        return teams[0]["team"]
+
+main function: Simulate N tournaments and keep track of win counts
+    - Need to simulate tournament N times.
+        - If N = 1000, we would have 1000 winners.
+    - Need to keep track of winners and add 1 count to the team's total wins for each.
+        Ex. if Uraguay won 2 tournaments and Portugal won 3 tournaments, then the count dictionary should be:
+            {"Uruguay": 2, "Portugal": 3}
+    - You can use the in keyword in Python to check if a dictionary has a particular key already.
+        Ex. if "Portugal" in counts: will check to see if "Portugal" already has an existing value in the counts dictionary.
