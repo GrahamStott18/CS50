@@ -1,0 +1,8 @@
+// Get key
+// Must be 2
+// Must be 26 lenght
+// Must be all letters
+// No letters can be used before
+// Pull in string
+// Create ciphertext
+// Print ciphertext

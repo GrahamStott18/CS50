@@ -1,0 +1,12 @@
+Unsorted List: random50000.txt
+
+    Sort 1 - 8.382s
+    Sort 2 - 1.169s (Merge Sort)
+    Sort 3 - 5.240s
+
+
+Sorted List: random50000.txt
+
+    Sort 1 - 1.330s (Bubble Sort)
+    Sort 2 - 2.005s (Merge Sort)
+    Sort 3 - 3.871s (Selection Sort)

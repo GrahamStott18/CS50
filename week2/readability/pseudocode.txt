@@ -1,0 +1,37 @@
+User to input some text
+
+Program tells the user the reading level of the text, based on the formula below:
+index = 0.0588 * L - 0.296 * S - 15.8
+
+L = Number of letters per 100 words
+S = Number of sentences per 100 words
+
+We need to count the number of:
+Words
+Letters
+Sentences
+
+Calculate the Grade Level
+
+Print the Grade Level
+
+
+Notes:
+
+A string is just an array of characters
+    To find out how many letters are in the text, we need to loop each character checking whether or not it is a letter.
+
+Need to count words in text.
+    Will need to build logic to count the words.
+    Not a dedicated function in C to do so.
+
+Words are separated by spaces, so we can count the spaces and add one to account for final word in text.
+    ex.         David is my friend.
+        Spaces = 3
+        Words  = 4
+
+Need to count number of sentences in text.
+    Can count number of full stops in text to determine number of sentences.
+        Full stops (Periods)
+        Question Marks
+        Exclaimation Marks

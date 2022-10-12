@@ -1,0 +1,46 @@
+Whoever gets the most votes wins the election.
+
+FIRST Scenario:
+    User inputs:
+    ./plurality alice bob charlie
+
+    Voters: 4
+        Alice
+        Alice
+        Charlie
+        Bob
+
+    Program Outputs:
+        Alice
+
+SECOND Scenario:
+    User inputs:
+    ./plurality alice bob charlie
+
+    Voters: 4
+        Alice
+        Alice
+        Charlie
+        Charlie
+
+    Program Outputs:
+        Alice
+        Charlie
+
+Vote Function:
+    - See if the name the user typed matches any of the names in the array of candidates.
+    - If it does, update their vote total and return true.
+    - If it doesnt, return false.
+
+Print_Winner Function:
+
+Objective: Print whoever has the most votes.
+    - Find out the maximum number of votes someone got.
+
+    Maxvotes = 0
+
+    Alice = 3
+    Billy = 2
+    Charlie = 4
+
+    - Print the names of the people whose votes = max votes

@@ -1,0 +1,79 @@
+Encrypt text based on User's Key
+
+If user runs program with ./caesar 1
+    Key = 1
+        A = B
+        B = C
+        C = D
+
+If user runs program with ./caesar 2
+    Key = 2
+        A = C
+        B = D
+
+Our program needs to prompt user for
+    Plaintext:
+And output
+    Ciphertext:
+According to the key selected.
+
+
+Example: ./caesar 1
+
+Plaintext: AbC
+Ciphertext: BcD
+
+The key is not a normal input, so we dont use get_string
+
+We use int main (int argc, string argv[])
+
+2 conditions for the Command Line Argument:
+    argc has to = 2
+    argv[1] must contain only digits
+
+If it doesnt fulfill these, must print: "Usage: ./caesar key"
+
+
+In ./caesar 1
+1 is a string
+We need to convert it to an int so that we can actually do math with it
+
+Function:
+Plaintext [i] + key = ciphertext
+
+
+What happens if someone types Z with a key of 1? Based on the ACSII table...
+
+Z = 90
+Key of 1
+
+Moves to ASCII position of 91
+    Probably a comma or other character
+We need it to loop over back to the letter A, which is 65
+
+How do we get (plaintext [j] + k) to loop back over when it goes past Z?
+
+A few steps:
+1. Reset the values so that the alphabet starts from 0 instead of 65 (similar to what we did in Scrabble) i.e. A = 0
+
+2. Mod 26 - So that it loops when it reaches over 26 letters
+
+    26 % 26 = 0
+    Or
+    28 % 26 = 2 (2 is the amount the mod went over 26 by)
+
+3. Bring it back to its original ASCII value
+
+    (plaintext [j] + k - 65) % 26x
+
+This needs to be done for uppercase and/or lowercase.
+    Same approach but using 97 instead of 65, to reset lowercase a to 0
+
+If its not a letter, print it as it is:
+    example:
+    Plaintext: AB50
+
+    Key 1
+
+    Ciphertext: BC50
+
