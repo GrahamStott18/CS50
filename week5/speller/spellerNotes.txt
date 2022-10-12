@@ -1,0 +1,27 @@
+- Impletement a program that spell-checks a file using a hash table.
+    - The program will spell-check a file after loading a dictionary of words from disk to memory.
+
+- When the program runs successfully, the output should contain the following information.
+    - A list of all misspelled words.
+    - Summary of the number of words misspelled, words in the dictionary and words in the text.
+    - Time in load, check size and unload refer to the time that speller spends executing each of the functions that you need to work on.
+
+- Need to implement the functions as efficiently as possible to reduce the time spent executing the functions.
+
+
+Functions to Write:
+1. load
+- Load all the words in the dictionary into a data structure, like a hash table
+
+2. hash
+- This will take a word and run a hash function on it, returning a number that correspondswith the word
+
+3. size
+- Return how many words are there in your dictionary.
+
+4. check
+- Take a word and answer the question, "Is this word in the dictionary"?
+- If the word exists in the dictionary , return true. If the word does not exist in the dictionary, return false.
+
+5. unload
+- Free any memory that was allocated to store data inside of the data structure.
